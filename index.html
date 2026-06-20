@@ -2,65 +2,81 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>OBS Fußball Overlay</title>
 
 <style>
 
-html, body{
+body{
     margin:0;
-    padding:0;
-    width:100%;
-    height:100%;
     overflow:hidden;
     background:transparent;
 }
 
-#container{
+#wrap{
     position:relative;
-    width:100%;
-    height:100%;
+    width:1536px;
+    height:864px;
 }
 
 #bg{
-    width:100%;
-    height:auto;
+    width:1536px;
     display:block;
 }
 
 #time{
     position:absolute;
 
-    left:2.5%;
-    top:39%;
+    left:70px;
+    top:450px;
 
-    width:11%;
+    width:180px;
+
+    text-align:center;
+
+    font-size:64px;
+    font-weight:900;
+    font-family:Arial;
+
+    color:black;
+}
+
+#home{
+    position:absolute;
+
+    left:770px;
+    top:445px;
+
+    width:70px;
 
     text-align:center;
 
     font-size:72px;
-    font-family:Arial, sans-serif;
     font-weight:900;
+    font-family:Arial;
 
-    color:#000000;
+    color:white;
+
+    text-shadow:
+        -2px -2px 0 #000,
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000;
 }
 
-#score{
+#away{
     position:absolute;
 
-    left:41%;
-    top:38%;
+    left:935px;
+    top:445px;
 
-    width:18%;
+    width:70px;
 
     text-align:center;
 
-    font-size:82px;
-    font-family:Arial, sans-serif;
+    font-size:72px;
     font-weight:900;
+    font-family:Arial;
 
-    color:#ffffff;
+    color:white;
 
     text-shadow:
         -2px -2px 0 #000,
@@ -74,13 +90,15 @@ html, body{
 
 <body>
 
-<div id="container">
+<div id="wrap">
 
-    <img id="bg" src="overlay.png" alt="Overlay">
+<img id="bg" src="overlay.png">
 
-    <div id="time">0'</div>
+<div id="time">00:00</div>
 
-    <div id="score">0 - 0</div>
+<div id="home">0</div>
+
+<div id="away">0</div>
 
 </div>
 
