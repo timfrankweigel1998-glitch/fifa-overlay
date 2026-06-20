@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>FIFA Overlay</title>
-
 <style>
+
 body{
     margin:0;
     overflow:hidden;
@@ -19,32 +14,43 @@ body{
 
 #time{
     position:absolute;
-    left:150px;
-    top:485px;
-    font-size:48px;
-    font-family:Arial;
-    font-weight:bold;
+
+    left:40px;
+    top:190px;
+
+    width:260px;
+
+    text-align:center;
+
+    font-size:72px;
+    font-family:Arial, sans-serif;
+    font-weight:900;
+
+    color:#000000;
 }
 
 #score{
     position:absolute;
+
     left:760px;
-    top:480px;
-    font-size:60px;
-    font-family:Arial;
-    font-weight:bold;
+    top:185px;
+
+    width:400px;
+
+    text-align:center;
+
+    font-size:82px;
+    font-family:Arial, sans-serif;
+    font-weight:900;
+
+    color:#ffffff;
+
+    text-shadow:
+        -3px -3px 0 #000,
+         3px -3px 0 #000,
+        -3px  3px 0 #000,
+         3px  3px 0 #000,
+         0px  0px 12px rgba(0,0,0,.5);
 }
+
 </style>
-
-</head>
-<body>
-
-<img id="bg" src="overlay.png">
-
-<div id="time">0'</div>
-<div id="score">0 - 0</div>
-
-<script src="script.js"></script>
-
-</body>
-</html>
