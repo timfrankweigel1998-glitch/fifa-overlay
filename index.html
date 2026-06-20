@@ -2,13 +2,17 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FIFA Overlay</title>
 
 <style>
 
 body{
     margin:0;
-    overflow:hidden;
+    padding:0;
     background:transparent;
+    overflow:hidden;
 }
 
 #wrap{
@@ -22,36 +26,36 @@ body{
     display:block;
 }
 
+/* ZEIT LINKS */
 #time{
     position:absolute;
-
     left:70px;
-    top:450px;
+    top:290px;
 
     width:180px;
 
     text-align:center;
 
-    font-size:64px;
+    font-size:56px;
+    font-family:Arial,sans-serif;
     font-weight:900;
-    font-family:Arial;
 
-    color:black;
+    color:#000;
 }
 
+/* GER SCORE */
 #home{
     position:absolute;
+    left:805px;
+    top:290px;
 
-    left:770px;
-    top:445px;
-
-    width:70px;
+    width:60px;
 
     text-align:center;
 
-    font-size:72px;
+    font-size:58px;
+    font-family:Arial,sans-serif;
     font-weight:900;
-    font-family:Arial;
 
     color:white;
 
@@ -62,19 +66,19 @@ body{
          2px  2px 0 #000;
 }
 
+/* CIV SCORE */
 #away{
     position:absolute;
+    left:995px;
+    top:290px;
 
-    left:935px;
-    top:445px;
-
-    width:70px;
+    width:60px;
 
     text-align:center;
 
-    font-size:72px;
+    font-size:58px;
+    font-family:Arial,sans-serif;
     font-weight:900;
-    font-family:Arial;
 
     color:white;
 
@@ -92,13 +96,13 @@ body{
 
 <div id="wrap">
 
-<img id="bg" src="overlay.png">
+    <img id="bg" src="overlay.png">
 
-<div id="time">00:00</div>
+    <div id="time">00:00</div>
 
-<div id="home">0</div>
+    <div id="home">0</div>
 
-<div id="away">0</div>
+    <div id="away">0</div>
 
 </div>
 
